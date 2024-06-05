@@ -1,0 +1,324 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Bold.ttf');
+    font-weight: 700;
+    font-style: normal;
+}
+
+h1.headline {
+    font-size: 48px;
+    margin: 20px;
+}
+
+.navbar {
+    background-color: #2B7A78;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 76px;
+    height: 97px;
+}
+
+.navbar-title {
+    margin-left: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-item {
+    margin-left: 20px;
+}
+
+.navbar-item a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.header-section {
+    background-image: url('Foto-bersama.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    position: relative;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.headline {
+    z-index: 1;
+    font-size: 3em;
+}
+
+.subheadline {
+    z-index: 1;
+    font-size: 1.5em;
+}
+
+.hero-section {
+    background-color: #3AAFA9;
+    text-align: left;
+    padding: 40px 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.hero-image {
+    width: 100%;
+    border: 5px solid white;
+    border-radius: 8px;
+}
+
+.gambar{
+display: flex;
+}
+
+.penjelasan {
+    display: block;
+    float: right;
+    padding:30px;
+    text-align: justify;
+    font-size: 20px;
+    max-width: 50%;
+}
+
+.video-section {
+    background-color: #f8f8f8;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.documentasi-section {
+    background-color: #3AAFA9;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.produk-section {
+    background-color: #3AAFA9;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.toggleButton {
+    display: block;
+    padding: 10px 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px 0;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.toggleButton img {
+    width: 30px;
+    height: 30px;
+}
+
+.hidden {
+    display: none;
+}
+
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+    font-weight: bold;
+}
+
+.mySlides, .mySlides2 {
+    display: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    user-select: none;
+    transform: translateY(-50%);
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 0;
+    border-radius: 0 3px 3px 0;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.text {
+    padding-top: 10px;
+    margin: 10px;
+    font-weight: bold;
+}
+
+.numbertext, .numbertext2 {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    text-align: justify;
+}
+
+.dot, .dot2 {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #c2c2c2;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover, .dot2:hover {
+    background-color: #ffffff;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 30%;
+    background: #f7f7f7;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+.card h3 {
+    margin: 10px 0 0 0;
+    color: #17252A;
+}
+
+.card p {
+    margin: 0;
+    padding: 0 10px 10px 10px;
+    color: #2B7A78;
+}
+
+.footer-section {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #e6e6e6;
+}
+
+.footer-section p {
+    margin: 0;
+    font-size: 16px;
+    color: black;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons img {
+    margin: 0 5px;
+}
+
+.wawancara{
+    text-align: left;
+}
